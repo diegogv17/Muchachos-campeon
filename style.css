@@ -76,3 +76,40 @@ body {
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
+
+/* XI HISTORICO */
+.xi-historico-section {
+    margin: 48px 0;
+}
+.xi-historico-section h2 {
+    text-align: center;
+    color: #ff9800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+.xi-historico-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.xi-historico-img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0005;
+    margin-bottom: 18px;
+    transition: transform 0.2s;
+}
+.xi-historico-img:hover {
+    transform: scale(1.04);
+}
+.xi-historico-list {
+    background: rgba(81,45,168,0.65);
+    color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    font-size: 1.2em;
+    list-style: decimal;
+    max-width: 400px;
+    width: 100%;
+}

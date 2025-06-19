@@ -16,6 +16,40 @@
             max-height: none;
             transition: max-height 0.8s cubic-bezier(0.4,0,0.2,1);
         }
+
+        .xi-historico-section {
+            margin: 48px 0;
+        }
+
+        .xi-historico-section h2 {
+            text-align: center;
+            color: #512da8;
+            letter-spacing: 2px;
+        }
+
+        .xi-historico-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .xi-historico-img {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px #0005;
+            margin-bottom: 18px;
+        }
+
+        .xi-historico-list {
+            background: rgba(81, 45, 168, 0.65);
+            color: #fff;
+            border-radius: 10px;
+            padding: 24px;
+            font-size: 1.2em;
+            list-style: decimal;
+            max-width: 400px;
+        }
     </style>
 </head>
 <body>
@@ -25,10 +59,12 @@
 </button>
     <header>
     <h1 class="titulo-principal">Muchachos</h1>
+    <!-- Barra de navegación con el nuevo apartado "XI HISTORICO" -->
     <nav class="navbar">
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#recuerdo">Recuerdos</a></li>
+            <li><a href="#xi-historico">XI historico</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -218,8 +254,30 @@
         </article>
         <!-- Apartado Resultado que muestra el contenido de remember/index.html -->
         <section id="recuerdo">
-            <h2>recuerdo</h2>
             <iframe src="remember/index.html" width="100%" height="600" style="border:none;"></iframe>
+        </section>
+
+        <!-- Nuevo apartado XI HISTORICO -->
+        <section id="xi-historico" class="xi-historico-section">
+            <h2>XI HISTÓRICO</h2>
+            <div class="xi-historico-content">
+                <a href="img/xi-historico.jpg" target="_blank">
+                    <img src="img/xi-historico.jpg" alt="XI Histórico" class="xi-historico-img">
+                </a>
+                <ul class="xi-historico-list">
+                    <li>Portero: YE</li>
+                    <li>Carrilero derecho: Sasvin</li>
+                    <li>Defensa derecho: Medusa</li>
+                    <li>Defensa central: aroche</li>
+                    <li>Defensa izquierdo: Maluma</li>
+                    <li>Carrilero izquierdo: Babys</li>
+                    <li>Medio centro: Ñengo</li>
+                    <li>Medio ofensivo: El Bendito</li>
+                    <li>Medio centro: Canche</li>
+                    <li>Delantero derecho: Garras</li>
+                    <li>Delantero izquierdo: Austin</li>
+                </ul>
+            </div>
         </section>
     </main>
     <script>
